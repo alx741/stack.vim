@@ -26,6 +26,7 @@ CompilerSet errorformat=
     \%-G%.%#process\ exited\ %.%#,
     \%-G%.%#--builddir=%.%#,
     \%-G--%.%#,
+    \%-G%.%#\|%.%#,
     \%E%f:%l:%c:\ error:,%+Z\ \ \ \ %m,
     \%E%f:%l:%c:\ error:\ %m,%-Z,
 
