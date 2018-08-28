@@ -1,7 +1,7 @@
 " Vim compiler file
 " Compiler:         Haskell Stack
 " Maintainer:       Daniel Campoverde <alx@sillybytes.net>
-" Latest Revision:  2018-08-28
+" Latest Revision:  2018-08-27
 
 if exists("current_compiler")
   finish
@@ -29,11 +29,9 @@ CompilerSet errorformat=
     \%-G%.%#\|%.%#,
     \%E%f:%l:%c:\ error:,%+Z\ \ \ \ %m,
     \%E%f:%l:%c:\ error:\ %m,%-Z,
+    \%W%f:%l:%c:\ warning:,%+Z\ \ \ \ %m,
+    \%W%f:%l:%c:\ warning:\ %m,%-Z,
 
-
-if exists('g:compiler_stack_ignore_unmatched_lines')
-  CompilerSet errorformat+=%-G%.%#
-endif
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
