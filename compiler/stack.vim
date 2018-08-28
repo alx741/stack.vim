@@ -23,6 +23,8 @@ CompilerSet errorformat=
     \%-G%.%#installing\ %.%#,
     \%-G%.%#registering\ %.%#,
     \%-G%.%#:\ copy/register%.%#,
+    \%-G%.%#process\ exited\ %.%#,
+    \%-G%.%#--builddir=%.%#,
     \%-G--%.%#,
     \%E%f:%l:%c:\ error:,%+Z\ \ \ \ %m,
     \%E%f:%l:%c:\ error:\ %m,%-Z,
