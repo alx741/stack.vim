@@ -24,8 +24,8 @@ CompilerSet errorformat=
     \%-G%.%#registering\ %.%#,
     \%-G%.%#:\ copy/register%.%#,
     \%-G--%.%#,
-    \%E%f:%l:%c:\ error:%m,
-    \%E%f:%l:%c:\ error:,%Z%m
+    \%E%f:%l:%c:\ error:,%+Z\ \ \ \ %m,
+    \%E%f:%l:%c:\ error:\ %m,%-Z,
 
 
 if exists('g:compiler_stack_ignore_unmatched_lines')
